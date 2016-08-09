@@ -1,0 +1,24 @@
+{
+    "name": "karmia-utility-date",
+    "version": "0.1.0",
+    "description": "Karmia utility date module",
+    "homepage": "https://github.com/fujimakishouten/karmia-utility-date",
+    "license": "MIT",
+    "author": "Kazuma Fujimaki <fujimaki-k@fujimakishouten.com>",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fujimakishouten/karmia-utility-date.git"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/mocha ./test"
+    },
+    "dependencies": {
+        "lodash": ">=4.11.1",
+        "karmia-utility-string": ">=0.1.1"
+    },
+    "devDependencies": {
+        "mocha": ">=2.4.5",
+        "expect.js": ">=0.3.1"
+    }
+}
