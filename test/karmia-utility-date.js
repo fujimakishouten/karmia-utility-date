@@ -4,6 +4,7 @@
 'use strict';
 
 
+
 // Variables
 var expect = require('expect.js'),
     karmia_utility_date = require('../lib'),
