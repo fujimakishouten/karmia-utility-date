@@ -1,6 +1,6 @@
 {
     "name": "karmia-utility-date",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "Karmia utility date module",
     "homepage": "https://github.com/fujimakishouten/karmia-utility-date",
     "license": "MIT",
@@ -19,5 +19,8 @@
     "devDependencies": {
         "mocha": ">=2.4.5",
         "expect.js": ">=0.3.1"
+    },
+    "engines": {
+        "node": ">=4.0.0"
     }
 }
