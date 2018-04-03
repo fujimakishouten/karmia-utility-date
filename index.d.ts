@@ -13,5 +13,4 @@ declare class KarmiaUtilityDate {
     format(format: string, date?: Date): string;
 }
 
-declare function karmia_utility_date(options: object): KarmiaUtilityDate;
-export = karmia_utility_date;
+export = KarmiaUtilityDate;
