@@ -13,6 +13,6 @@
         "sourceMap": false,
         "target": "esnext"
     },
-    "include": ["./test/**/*"]
+    "include": ["**/*"]
 }
 
