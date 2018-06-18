@@ -5,13 +5,9 @@
 
 
 
-// Declaration
-declare function require(id: string): any;
-
-
 // Import modules
 import KarmiaUtilityDate from "../";
-const expect = require("expect.js");
+import expect = require("expect.js");
 
 
 // Variables
