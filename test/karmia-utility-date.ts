@@ -5,8 +5,12 @@
 
 
 
+// Declaration
+declare function require(id: string): any;
+
+
 // Import modules
-import KarmiaUtilityDate = require("../");
+import KarmiaUtilityDate from "../";
 const expect = require("expect.js");
 
 

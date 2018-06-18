@@ -3,7 +3,7 @@ Karmia utility date module
 
 ## Usage
 ```JavaScript
-const karmia_utility_date = require('karmia-utility-date'),
+const karmia_utility_date = require('karmia-utility-date').default,
     kdate = new karmia_utility_date();
 ```
 

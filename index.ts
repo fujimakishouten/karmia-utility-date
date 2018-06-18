@@ -6,7 +6,7 @@
 
 
 // Import modules
-import KarmiaUtilityString = require("karmia-utility-string");
+import KarmiaUtilityString from "karmia-utility-string";
 
 
 declare interface Options {
@@ -198,7 +198,16 @@ class KarmiaUtilityDate {
                 const offset = date.toString().split(' ')[5].slice(3);
                 return `${offset.slice(0, 1)}${offset.slice(1, 3)}:${offset.slice(-2)}`;
             } else if ('T' === value) {
-                return date.toString().split(' ')[6].slice(1, -1);
+                const string = date.toString();
+                const index = string.indexOf('(');
+                const timezone = string.substring(index + 1, string.length - 1);
+                if (timezone.indexOf(" ") < 0) {
+                    return timezone;
+                }
+
+                return timezone.split(" ").reduce((collection, value) => {
+                    return collection + value.charAt(0).toUpperCase();
+                }, "");
             } else if ('Z' === value) {
                 return date.getTimezoneOffset();
             } else if ('c' === value) {
@@ -216,7 +225,7 @@ class KarmiaUtilityDate {
 
 
 // Export module
-export = KarmiaUtilityDate;
+export default KarmiaUtilityDate;
 
 
 
